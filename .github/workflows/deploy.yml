@@ -1,8 +1,8 @@
-      name: Reto05
-      on:
-         workflow_dispatch:
-      env:
-         entorno: dev
+name: Reto05
+on:
+   workflow_dispatch:
+env:
+   entorno: dev
          
 jobs:
   deploy:
