@@ -13,7 +13,9 @@ jobs:
       uses: actions/checkout@v2
       
     -name: Login to Azure  
-      uses: azur${{ secrets.CREDENCIALES }}
+      uses: azure/login@v1
+      with:
+         creds: ${{ secrets.CREDENCIALES }}
 
     - name: Deploy Bicep template for dev
       uses: azure/arm-deploy@v1
