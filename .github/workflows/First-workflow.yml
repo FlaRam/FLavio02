@@ -32,12 +32,6 @@ jobs:
      - name: paso dos
        run: echo "step2"
 
-on:
-  push
-
-name: Cowsays
-
-jobs:
   Job2:
     name: Cowsays
     runs-on: ubuntu-latest
